@@ -106,3 +106,5 @@ export interface PreflightCheckEvent {
   type: 'start' | 'stop';
   status: CheckStatus;
 }
+
+export const DashboardGroupLink = 'Dashboard';

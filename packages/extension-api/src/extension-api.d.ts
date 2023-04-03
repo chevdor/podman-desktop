@@ -248,6 +248,7 @@ declare module '@podman-desktop/api' {
   export interface Link {
     title: string;
     url: string;
+    group: LinkGroupName;
   }
   export type CheckResultLink = Link;
 
@@ -286,6 +287,9 @@ declare module '@podman-desktop/api' {
   }
 
   export type ProviderLinks = Link;
+
+  export const DashboardGroupLink = 'Dashboard';
+  export type LinkGroupName = typeof DashboardGroupLink | string;
 
   export interface ProviderImages {
     icon?: string | { light: string; dark: string };

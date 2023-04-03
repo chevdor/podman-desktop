@@ -454,23 +454,49 @@ export async function activate(extensionContext: extensionApi.ExtensionContext):
     logo: './logo.png',
   };
 
+  const corePodmanEngineLinkGroup = 'Core Podman Engine';
+
   // add links
   providerOptions.links = [
     {
       title: 'Visit the Podman website',
       url: 'https://podman.io/',
+      group: extensionApi.DashboardGroupLink,
     },
     {
       title: 'Read the Podman installation guide',
       url: 'https://podman.io/getting-started/installation',
+      group: extensionApi.DashboardGroupLink,
     },
     {
       title: 'Read the Podman/Docker compatibility guide',
       url: 'https://podman-desktop.io/docs/troubleshooting#warning-about-docker-compatibility-mode',
+      group: extensionApi.DashboardGroupLink,
     },
     {
       title: 'Join the Podman community',
       url: 'https://podman.io/community/',
+      group: extensionApi.DashboardGroupLink,
+    },
+    {
+      title: 'Getting started with containers',
+      url: 'https://podman.io/getting-started/',
+      group: corePodmanEngineLinkGroup,
+    },
+    {
+      title: 'View podman commands',
+      url: 'https://docs.podman.io/en/latest/Commands.html',
+      group: corePodmanEngineLinkGroup,
+    },
+    {
+      title: 'Set up podman',
+      url: 'https://podman.io/getting-started/installation',
+      group: corePodmanEngineLinkGroup,
+    },
+    {
+      title: 'View all tutorials',
+      url: 'https://docs.podman.io/en/latest/Tutorials.html',
+      group: corePodmanEngineLinkGroup,
     },
   ];
 

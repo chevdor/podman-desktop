@@ -48,6 +48,7 @@ import { Emitter } from './events/emitter';
 import { CancellationTokenSource } from './cancellation-token';
 import type { ApiSenderType } from './api';
 import type { AuthenticationImpl } from './authentication';
+import { DashboardGroupLink } from './api/provider-info';
 
 /**
  * Handle the loading of an extension
@@ -622,6 +623,7 @@ export class ExtensionLoader {
       commands,
       registry,
       provider,
+      DashboardGroupLink,
       fs,
       configuration,
       tray,
